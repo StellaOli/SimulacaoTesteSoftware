@@ -258,7 +258,7 @@ Decisões:
     flowchart TD
     A[Inicio] --> B{i < m ?}
     B -- Sim --> C{j < n ?}
-    C -- Sim --> D[print(i,j)]
+    C -- Sim --> D["print{i,j}"]
     D --> E[j++]
     E --> C
     C -- Não --> F[i++]
@@ -322,8 +322,8 @@ E --> C
 G --> C
 I --> C
 
-H -->|Sim| J[return "Acima"]
-H -->|Nao| K[return "Abaixo"]
+H -->|Sim| J["return "Acima""]
+H -->|Nao| K["return "Abaixo""]
 ```
 
 ---
