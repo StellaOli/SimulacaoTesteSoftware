@@ -159,11 +159,15 @@ Decisões:
 
 ```mermaid
     flowchart TD
-    A[Inicio] --> B{idade >= 18 AND membro?}
-    B -- Sim --> C[Permitido]
+    A[Inicio] --> B{idade >= 18}
+    B -- Sim --> C[Membro?]
     B -- Não --> D[Negado]
-    C --> E[Fim]
-    D --> E
+    C -- Não --> E[Negado]
+    C -- Sim --> F[Permitido]
+    D --> G[Fim]
+    E --> G[Fim]
+    F --> G[Fim]
+    
 ```
 ---
 
