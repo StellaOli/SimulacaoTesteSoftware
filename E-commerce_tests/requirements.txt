@@ -1,0 +1,6 @@
+pytest
+pytest-benchmark
+locust
+requests
+fastapi 
+uvicorn
